@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshidere AnimeWeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Roshidere</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#character">Character</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <section class="hero">
+        <h1>Welcome To Roshidere AnimeWeb</h1>
+
+        <a href="https://example.com">
+            <button class="cta-button">Nonton Anime</button>
+        </a>        
+    </section>
+
+    
+
+    <section id="character" class="gallery">
+        <div class="gallery-item">
+            <img src="caracter/kuze.jpg" alt="Character 1">
+        </div>
+        <div class="gallery-item">
+            <img src="caracter/alya.jpg" alt="Character 2">
+        </div>
+        <div class="gallery-item">
+            <img src="caracter/yuki.jpg" alt="Character 3">
+        </div>
+        <div class="gallery-item">
+            <img src="caracter/maria.jpg" alt="Character 4">
+        </div>
+    </section>
+
+    <section class="caracter">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="profile/kuze1.jpg" alt="Masachika Kuzee">
+            </div>
+            <div class="profile-content">
+                <h1 id="title1">Masachika Kuzee</h1>
+                <p>
+                    Masachika Kuze is an unmotivated underachiever who routinely stays up late 
+                    indulging in his nerdy hobbies. The girl who sits next to him in class, Alisa, 
+                    constantly gets after him. While his grade may be on the lower end, 
+                    he actually understands Russian because of his paternal grandfather, 
+                    who was a big lover of Russian Culture.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="caracter1">
+        <div class="profile-container1">
+            <div class="profile-image1">
+                <img src="profile/alya1.jpg" alt="Masachika Kuzee">
+            </div>
+            <div class="profile-content1">
+                <h1 id="title2">Alisa Kujou</h1>
+                <p>
+                    Alisa Mikhailovna Kujou is a model student who boasts the highest grades in her school year and the student council accountant. Her nickname is Alya and she is the younger biological sister of Maria Mikhailovna Kujou. She is one of the two most beautiful girls in her school year, and is called the "Solitary Princess" because she is perceived as very cold and distant.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="caracter">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="profile/yuki1.jpg" alt="Masachika Kuzee">
+            </div>
+            <div class="profile-content">
+                <h1 id="title3">Yuki Suou</h1>
+                <p>
+                    Yuki Suou is a proper young lady from a family of former nobility. She is the student council publicist and former middle school student council president. She is one of the two most beautiful girls in her school year, and is called the "Noble Princess". She is childhood friends with Masachika.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="caracter1">
+        <div class="profile-container1">
+            <div class="profile-image1">
+                <img src="profile/maria1.jpg" alt="Masachika Kuzee">
+            </div>
+            <div class="profile-content1">
+                <h1 id="title4">Mariya Kujou</h1>
+                <p>
+                    Mariya Mikhailovna Kujou is a second-year student and the student council secretary. Her nickname is Masha and she is the older biological sister of Alisa Mikhailovna Kujou. She is one of the two beauties from her school year. She is popular for her looks and motherly gentle aura. She is called the "Madonna" of the school because of this.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="caracter2">
+        <div class="profile-container1">
+            <div class="profile-content1">
+                <h1 id="title5">Thank you for viewing my animeweb</h1>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var sections = document.querySelectorAll('.animate-section');
+        
+        function checkScroll() {
+            sections.forEach(function(section) {
+                var sectionTop = section.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                
+                if (sectionTop < windowHeight * 0.75) {
+                    section.classList.add('animate');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        checkScroll(); // Check on load
+    });
+</script>
+</body>
+</html>

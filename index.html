@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Malvin - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"><a href="#home">Kepun</a></h1>
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h2 class="title">Hello, I'm <span class="highlight">Malvin</span></h2>
+            <p class="subtitle">Web Developer & Designer</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>Hello! I'm a passionate web developer with a keen eye for design. I love creating beautiful, functional websites that provide great user experiences.</p>
+              <p>My skills include HTML, CSS, JavaScript, and various modern web technologies. I'm always eager to learn and take on new challenges in the ever-evolving world of web development.</p>
+              <a href="aboutme.html" id="anchor-id">Lihat Selengkapnya</a>
+            </div>
+            <div class="skill-bars">
+              <h2>My Skill</h2>
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>JavaScript</span>
+                </div>
+                <div class="progress-line javascript">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>Python</span>
+                </div>
+                <div class="progress-line python">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>MySQL</span>
+                </div>
+                <div class="progress-line mysql">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="certificates">
+        <div class="container">
+          <h2 class="section-title">Certificates</h2>
+          <div class="certificate-grid">
+            <div class="certificate-card">
+              <img src="assetcertif/certif1.jpg" alt="Certificate 1" class="certificate-image">
+              <h3>Sertifikat Dilesin</h3>
+              <p>This is my first programming certificate. But just a webinar, not very useful.</p>
+            </div>
+
+            <div class="certificate-card">
+              <img src="assetcertif/certif2.jpg" alt="Certificate 2" />
+              <h3>Course Certificate</h3>
+              <p>I think this will be quite useful. Moreover, there are hours of videos that I have to watch first. This is from Udemy</p>
+            </div>
+
+            <div class="certificate-card">
+              <img src="/placeholder.svg?height=200&width=300" alt="Certificate 2" />
+              <h3>Advanced JavaScript</h3>
+              <p>Issued by: Tech Academy</p>
+            </div>
+            <div class="certificate-card">
+              <img src="/placeholder.svg?height=200&width=300" alt="Certificate 3" />
+              <h3>React Mastery</h3>
+              <p>Issued by: Frontend Experts</p>
+            </div>
+            <div id="modal" class="modal">
+              <span id="close" class="close">&times;</span>
+              <img id="modal-content" class="modal-content">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <div class="project-grid">
+
+            <div class="project-card">
+              <img src="project/project1/project1-1.png" alt="Project 1" />
+              <div class="project-info">
+                <h3>AnimeWeb</h3>
+                <p>I made a website that contains several characters from one of my favorite anime. Like their short Bio and others. Even though it looks easy, it is also difficult for me.</p>
+                <a href="project/project1/index.html" class="project-link">View Project</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="project/project2/project2-1.png" alt="Project 2" />
+              <div class="project-info">
+                <h3>BlockMods</h3>
+                <p>I create addon websites like MCPEDL and ModBay. At the same time, I will use it as a website to share download links on my Minecraft YouTube. Some times this is quite confusing.</p>
+                <a href="project/project2/index.html" class="project-link">View Project</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="/placeholder.svg?height=300&width=400" alt="Project 3" />
+              <div class="project-info">
+                <h3>Project Name 3</h3>
+                <p>A brief description of the project and the technologies used.</p>
+                <a href="#" class="project-link">View Project</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  <div id="modal" class="modal">
+      <span id="close" class="close">&times;</span>
+      <img id="modal-content" class="modal-content">
+  </div>
+  
+  <!-- Tambahkan kode JavaScript di sini -->
+  <script>
+      const certificateCards = document.querySelectorAll('.certificate-card');
+      const modal = document.getElementById('modal');
+      const modalContent = document.getElementById('modal-content');
+      const closeBtn = document.getElementById('close');
+      
+      certificateCards.forEach((card) => {
+          card.addEventListener('click', () => {
+              const certificateImage = card.querySelector('img');
+              const certificateSrc = certificateImage.src;
+              modalContent.src = certificateSrc;
+              modal.style.display = 'block';
+          });
+      });
+      
+      closeBtn.addEventListener('click', () => {
+          modal.style.display = 'none';
+      });
+      
+      window.addEventListener('click', (event) => {
+          if (event.target === modal) {
+              modal.style.display = 'none';
+          }
+      });
+  </script>
+  </body>
+</html>
